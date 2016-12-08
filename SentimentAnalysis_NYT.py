@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
+# code adapted from: http://fjavieralba.com/basic-sentiment-analysis-with-python.html
 
 import nltk
-
 from sklearn.feature_extraction.text import CountVectorizer
 import pandas as pd
 import os
@@ -10,7 +10,6 @@ from pprint import pprint
 import yaml
 import sys
 import re
-
 import nltk.classify.util
 from nltk.classify import NaiveBayesClassifier
 from nltk.corpus import movie_reviews
@@ -161,5 +160,6 @@ if __name__ == "__main__":
         score = sentiment_score(dict_tagged_sentences)
         vect.append(score)
         print(score)
+        
     file["SentimentScore"]= vect
     file.to_csv("NYTarticles_score.csv", sep=',', encoding='utf-8')
