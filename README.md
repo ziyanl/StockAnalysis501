@@ -17,5 +17,5 @@ Data folder: news article text files
 dicts folder: dictionary used for sentiment analysis
 Result folder: sentiment score for news articles
 
-Website: http://sn69204.wixsite.com/stockanalysis
+Website: http://an69204.wixsite.com/stockanalysis
 Github: https://github.com/ziyanl/StockAnalysis501
